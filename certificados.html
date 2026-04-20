@@ -91,7 +91,23 @@
 
             <div class="col-md-4 mb-4">
               <div class="contact-box" onclick="abrirLightbox(this.querySelector('img').src)">
-                <img src="static/imagem/imagens/DEZ/FSolucoes.jpeg " class="img-fluid projeto-img" alt="Evento"
+                <img src="static/imagem/imagens/26.04.ABR/maratona.jpeg" class="img-fluid projeto-img" alt="Evento"
+                  onclick="abrirLightbox(this.src)">
+                <h3>Maratona Interna de Programação</h3>
+                <h4>- FATEC -</h4>
+                <h5>Abr/2026</h5>
+                <p>
+                  Integrando a equipe <strong>ImportGambiarra</strong>, participei de mais uma Maratona Interna de Programação da FATEC/SJC.
+                  O evento reuniu 41 equipes em um desafio intensivo de lógica de programação, no qual utilizamos Python🐍para resolução dos 
+                  problemas. A experiência proporcionou o aprimoramento do raciocínio lógico, além de fortalecer habilidades de colaboração 
+                  e desenvolvimento ágil de soluções.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="contact-box" onclick="abrirLightbox(this.querySelector('img').src)">
+                <img src="static/imagem/imagens/25.12.DEZ/FSolucoes.jpeg " class="img-fluid projeto-img" alt="Evento"
                   onclick="abrirLightbox(this.src)">
                 <h3>Feira de Soluções</h3>
                 <h4>- FATEC -</h4>
@@ -108,7 +124,7 @@
 
             <div class="col-md-4 mb-4">
               <div class="contact-box" onclick="abrirLightbox(this.querySelector('img').src)">
-                <img src="static/imagem/imagens/OUT/evento_2.jfif" class="img-fluid projeto-img" alt="Evento"
+                <img src="static/imagem/imagens/25.10.OUT/evento_2.jfif" class="img-fluid projeto-img" alt="Evento"
                   onclick="abrirLightbox(this.src)">
                 <h3>Science & Business Connection</h3>
                 <h4>- PIT -</h4>
@@ -127,7 +143,7 @@
               
             <div class="col-md-4 mb-4">
               <div class="contact-box">
-                <img src="static/imagem/imagens/OUT/pyday_2.jpeg" 
+                <img src="static/imagem/imagens/25.10.OUT/pyday_2.jpeg" 
                       class="img-fluid projeto-img" 
                       alt="Evento" 
                       onclick="abrirLightbox(this.src)">
@@ -145,7 +161,7 @@
 
             <div class="col-md-4 mb-4">
               <div class="contact-box" onclick="abrirLightbox(this.querySelector('img').src)">
-                <img src="static/imagem/imagens/OUT/maratona.jfif" class="img-fluid projeto-img" alt="Evento"
+                <img src="static/imagem/imagens/25.10.OUT/maratona.jfif" class="img-fluid projeto-img" alt="Evento"
                   onclick="abrirLightbox(this.src)">
                 <h3>Maratona de Programação</h3>
                 <h4>- FATEC -</h4>
@@ -166,7 +182,7 @@
               <div class="contact-box" onclick="abrirLightbox(this.querySelector('img').src)">
                 <a href="https://www.linkedin.com/company/pythonsjc/posts/?feedView=all" target="_blank"
                   class="icon-circle"></a>
-                <img src="static/imagem/imagens/SET/python_1.jfif" class="img-fluid projeto-img" alt="Evento"
+                <img src="static/imagem/imagens/25.09.SET/python_1.jfif" class="img-fluid projeto-img" alt="Evento"
                   onclick="abrirLightbox(this.src)">
                 <h3>PyDay</h3>
                 <h4>- Python SJC -</h4>
@@ -181,7 +197,7 @@
 
             <div class="col-md-4 mb-4">
               <div class="contact-box" onclick="abrirLightbox(this.querySelector('img').src)">
-                <img src="static/imagem/imagens/SET/evento_1.jfif" class="img-fluid projeto-img" alt="Evento"
+                <img src="static/imagem/imagens/25.09.SET/evento_1.jfif" class="img-fluid projeto-img" alt="Evento"
                   onclick="abrirLightbox(this.src)">
                 <h3>Innovation Week 2025</h3>
                 <h4>- PIT -</h4>
@@ -228,7 +244,7 @@
     <div style="text-align:center; flex:1;">
       <h3>WGCosta</h3>
       <p>Em constante aprendizado.</p>
-      <p>&copy; 2025 - Todos os direitos reservados.</p>
+      <p>&copy; <span id="ano"></span> - Todos os direitos reservados.</p>
     </div>
   </footer>
 
@@ -321,6 +337,8 @@
       atualizarBotoes();
     }
   </script>
+
+  <script src="js/script.js"></script>
 
 </body>
 
