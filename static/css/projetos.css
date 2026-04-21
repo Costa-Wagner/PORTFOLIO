@@ -1,22 +1,8 @@
-/* ========== Projetos ========== */
-.contact-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  border: 2px solid #ccc;
-  padding: 15px;
-  border-radius: 12px;
-  background: #f9f9f9;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 100%;
-}
-
 /* SubTítulos */
 .ferramentas-titulo {
   color: #086aeb;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
@@ -33,20 +19,198 @@ section.content {
   text-decoration: none;
 }
 
-.projeto-img {
+/* ========== Projetos ========== */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 2rem;
+}
+
+.projeto-card {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.projeto-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.projeto-card-thumb {
   width: 100%;
-  height: 200px;
-  margin-bottom: 12px;
-  border-radius: 8px;
+  height: 110px;
   object-fit: cover;
 }
 
-.contact-box h3 {
-  margin: 0;
+.projeto-card-body {
+  padding: 0.75rem 1rem;
+}
+
+.projeto-card-body h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #086aeb;
+  margin-bottom: 4px;
+}
+
+.projeto-card-body p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.projeto-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #ddeeff;
+  color: #086aeb;
+}
+
+/* ========== Modal ========== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-proj {
+  background: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 850px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-proj-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  background: #f9f9f9;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+  z-index: 10;
+}
+
+.modal-proj-close:hover {
+  color: #333;
+}
+
+.modal-proj-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.modal-proj h2 {
   font-size: 18px;
   font-weight: bold;
   color: #086aeb;
-  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.modal-subtitulo {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.modal-proj p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.modal-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #e8e8e8;
+  color: #555;
+}
+
+.modal-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: #086aeb;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.modal-btn:hover {
+  background: #0554c2;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ========== Responsividade (ajuste dos cards) ========== */
+
+@media (max-width: 576px) {
+  .projetos-grid {
+    grid-template-columns: 1fr 1fr;  /* 2 colunas no celular */
+  }
+
+  .projeto-card-thumb {
+    height: 80px;
+  }
+
+  .modal-proj {
+    width: 95%;
+    max-width: none;
+    padding: 1rem;
+  }
 }
 
 .contact-box p {

@@ -1,182 +1,248 @@
-  <!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CV - Wagner Costa</title>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CV - Wagner Costa</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- CSS principais -->
-    <link rel="stylesheet" href="static/css/base.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/content.css">
-    <link rel="stylesheet" href="static/css/footer.css">
-    <link rel="stylesheet" href="static/css/cv.css">
+  <!-- CSS principais -->
+  <link rel="stylesheet" href="static/css/base.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/content.css">
+  <link rel="stylesheet" href="static/css/footer.css">
+  <link rel="stylesheet" href="static/css/cv.css">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
-    <!-- HEADER -->
-    <header class="hero">
-      <div class="hero-left d-flex align-items-center">
-        <h1>Wagner Costa</h1>
+  <style>
+    @media print {
+      header, footer, #btnImprimir, nav { display: none !important; }
+      body { background: white !important; }
+      .content { padding: 0 !important; }
+      .container { max-width: 100% !important; padding: 0 10px !important; }
+      .cv-section { margin-bottom: 8px !important; }
+      h2 { font-size: 13px !important; margin-bottom: 4px !important; }
+      ul li, p, .exp-desc { font-size: 11px !important; line-height: 1.4 !important; }
+      .header h1 { font-size: 18px !important; }
+      .contact { font-size: 10px !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="hero-left d-flex align-items-center">
+      <h1>Wagner Costa</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificados.html">Certificados</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">C.V.</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-          aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Alternar navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- CONTEÚDO -->
+  <section class="content">
+    <main>
+      <div class="container">
 
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link" href="certificados.html">Certificados</a></li>
-            <li class="nav-item"><a class="nav-link" href="cv.html">C.V.</a></li>
-            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- CONTEÚDO -->
-    <section class="content">
-      <main>
-        <div class="container">
-          <div class="header">
-            <div class="header-text">
-              <h1>Wagner Gonçalves Costa</h1>
-              <div class="contact">
-                (12) 98105-6787<br>
-                | <a href="mailto:wagnergcosta@hotmail.com">wagnergcosta@hotmail.com</a> |
-                <a href="https://github.com/Costa-Wagner" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
-                <a href="https://www.linkedin.com/in/wagner-costa-391b0726/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-              </div>
-            </div>
-            <div class="header-img">
-              <img src="static/imagem/imagens/Wagner.2.jpg" alt="Wagner Gonçalves Costa">
+        <!-- CABEÇALHO DO CV -->
+        <div class="header">
+          <div class="header-text">
+            <h1>Wagner Gonçalves Costa</h1>
+            <div class="contact">
+              (12) 98105-6787 |
+              <a href="mailto:wagnergcosta@hotmail.com">wagnergcosta@hotmail.com</a> |
+              <a href="https://github.com/Costa-Wagner" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+              <a href="https://www.linkedin.com/in/costa-wagner/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+              <a href="https://portfolio-wagner-nu.vercel.app" target="_blank"><i class="fas fa-globe"></i> Portfólio</a>
             </div>
           </div>
+          <div class="header-img">
+            <img src="static/imagem/imagens/Wagner.2.jpg" alt="Wagner Gonçalves Costa">
+          </div>
+        </div>
 
+        <!-- RESUMO PROFISSIONAL -->
+        <div class="cv-section">
           <h2>Resumo Profissional</h2>
-          <ul>
-            Profissional com experiência em gestão e processos administrativos, em transição para área de TI com foco em Banco de Dados e SQL. Atualizando habilidades em modelagem de dados, consultas SQL e análise de dados.
-          </ul>
+          <p>
+            Engenheiro de Produção com experiência na indústria e no setor público, atualmente em transição para a área de desenvolvimento de software. Ao longo da carreira, desenvolvi experiência em análise e otimização de processos, controle de qualidade e gestão administrativa — competências que complementam a formação técnica em desenvolvimento e agregam perspectiva prática à construção de soluções de software. Atualmente curso DSM - Desenvolvimento de Software Multiplataforma na FATEC, com projetos práticos desenvolvidos em HTML, CSS, Python, TypeScript, JavaScript, React e MySQL.
+          </p>
+        </div>
 
+        <!-- HABILIDADES TÉCNICAS -->
+        <div class="cv-section">
           <h2>Habilidades Técnicas</h2>
           <ul>
-            <li><strong>Banco de Dados:</strong> SQL, modelagem relacional e consultas intermediárias</li>
-            <li><strong>Ferramentas:</strong> MySQL</li>
-            <li><strong>Linguagens:</strong> Python (básico para análise de dados)</li>
+            <li><strong>Linguagens:</strong> HTML5 · CSS3 · Python · TypeScript · JavaScript</li>
+            <li><strong>Frameworks e Bibliotecas:</strong> React · Flask · Node.js</li>
+            <li><strong>Banco de Dados:</strong> MySQL · Modelagem Relacional</li>
+            <li><strong>Ferramentas:</strong> GitHub · Docker · Figma · Jira</li>
+            <li><strong>Metodologias:</strong> Scrum · Metodologias Ágeis</li>
             <li><strong>Pacote Office:</strong> Avançado</li>
-            <li><strong>Versionamento:</strong> GitHub</li>
-          </ul>
-
-          <h2>Formação Acadêmica</h2>
-          <ul>
-            <li><strong>FATEC</strong> – Desenvolvimento de Software Multiplataforma (2025 – 2028 previsão)</li>
-            <li><strong>UNINTER</strong> – Gestão Pública (2020)</li>
-            <li><strong>UNITAU</strong> – Engenharia de Produção Mecânica (2011)</li>
-          </ul>
-
-          <h2>Cursos Complementares</h2>
-          <ul>
-            <li>SQL com MySQL: Consultas e manipulação de dados – Alura</li>
-            <li>Modelagem de Banco de Dados: do Conceitual ao Físico – Alura</li>
-            <li>MySQL - Curso em Vídeo</li>
-            <li>Python para Análise de Dados – Alura</li>
-            <li>Lógica de Programação com Python – Alura</li>
-            <li>Introdução ao GitHub – Alura</li>
-            <li>Curso de Empreendedorismo – UNITAU/SEBRAE</li>
-          </ul>
-
-          <h2>Experiência Profissional</h2>
-          <ul>
-            <li><strong>Prefeitura de São José dos Campos – SJC/SP (2017 – Atual):</strong> Assistente em Gestão Municipal – Apoio em processos administrativos, análise de dados, criação de relatórios.</li>
-            <li><strong>Helifer – São Paulo/SP (2015 – 2017):</strong> Engenharia de Produção – Suporte técnico e acompanhamento de produção, controle e análise de indicadores.</li>
-            <li>Experiências anteriores resumidas: <strong>Global Acqua, Prokraft, UNITAU e Thesi Montagens (2004-2013)</strong> – funções administrativas, de processo e de produção.</li>
-          </ul>
-
-          <h2>Projetos</h2>
-          <ul>
-            <li><strong>Projeto Acadêmico:</strong> Desenvolver uma solução digital que facilite a visualização dos dados do CENSO e apoie o usuário na tomada de decisões sobre a melhor distribuição dos recursos públicos.</li>
-            <li><strong>Projeto de Banco de dados:</strong> Elaboração de banco de dados utilizando consultas SQL para geração de insights estratégicos.</li>
-          </ul>
-
-          <h2>Idiomas</h2>
-          <ul>
-            <li>Inglês, Espanhol – Básico</li>
           </ul>
         </div>
-      </main>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div style="position:absolute; left:20px; top:50%; transform: translateY(-50%); display:flex; gap:15px; align-items:center;">
-        <a href="https://github.com/Costa-Wagner" target="_blank" class="icon-circle">
-          <img src="static/imagem/logos/GitHub.png" alt="GitHub">
-        </a>
-        <a href="https://linkedin.com/in/wagner-costa-391b0726/" target="_blank" class="icon-circle">
-          <img src="static/imagem/logos/Linkedin.jpg" alt="LinkedIn">
-        </a>
-        <a href="https://wa.me/5512981056787" target="_blank" class="icon-circle">
-          <img src="static/imagem/logos/whatsapp.png" alt="WhatsApp">
-        </a>
+        <!-- FORMAÇÃO ACADÊMICA -->
+        <div class="cv-section">
+          <h2>Formação Acadêmica</h2>
+          <ul>
+            <li><strong>FATEC</strong> – Tecnólogo em Desenvolvimento de Software Multiplataforma (2025 – 2028 previsão)</li>
+            <li><strong>UNINTER</strong> – Bacharel em Gestão Pública (2018 – 2020)</li>
+            <li><strong>UNITAU</strong> – Bacharel em Engenharia de Produção Mecânica (2008 – 2011)</li>
+          </ul>
+        </div>
+
+        <!-- CURSOS COMPLEMENTARES -->
+        <div class="cv-section">
+          <h2>Cursos Complementares</h2>
+          <ul>
+            <li>Escola de Inovadores – Fatec São José dos Campos (40h)</li>
+            <li>Python Básico – Fundação Bradesco (18h)</li>
+            <li>Empreendedorismo – UNITAU/SEBRAE (320h)</li>
+          </ul>
+        </div>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+        <div class="cv-section">
+          <h2>Experiência Profissional</h2>
+          <ul>
+
+            <li>
+              <strong>Tribunal Regional Eleitoral de São Paulo – SJC/SP (mar/2024 – Atual)</strong><br>
+              <em>Servidor Requisitado</em><br>
+              <span class="exp-desc">Atuação em processos eleitorais e administrativos com operação diária de múltiplos sistemas institucionais: SEI, e-Título, Elo 22, Infodip, Odin e PJe. Responsável por cadastro e regularização de títulos eleitorais, emissão de certidões, condução de processos administrativos de prestação de contas e análise de conformidade legal.</span>
+            </li>
+
+            <li>
+              <strong>Prefeitura Municipal de São José dos Campos – SJC/SP (jul/2017 – Atual)</strong><br>
+              <em>Assistente em Gestão Municipal</em><br>
+              <span class="exp-desc">Atuação em processos administrativos municipais com foco em tributação e cadastro imobiliário. Parcelamento de tributos, atualização de cadastro imobiliário, levantamento de débitos e emissão de Certidão Negativa de Débitos Municipais (CNDM), com operação de sistemas digitais municipais de gestão tributária e atendimento ao cidadão.</span>
+            </li>
+
+            <li>
+              <strong>Helifer – São Paulo/SP (out/2015 – jul/2017)</strong><br>
+              <em>Engenheiro Gestor Empresarial</em><br>
+              <span class="exp-desc">Análise e otimização de processos industriais, planejamento e controle da produção, gestão de estoque e avaliação de custos. Implementação de sistemas e processos internos e elaboração de instruções de trabalho.</span>
+            </li>
+
+            <li>
+              <strong>Experiências anteriores (2004 – 2013)</strong><br>
+              <em>Global Acqua · Prokraft · UNITAU · Thesi Montagens</em><br>
+              <span class="exp-desc">Atuação em engenharia de qualidade, planejamento e controle da produção, logística e administração em empresas dos segmentos metalúrgico, papeleiro e químico.</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- PROJETOS -->
+        <div class="cv-section">
+          <h2>Projetos</h2>
+          <ul>
+
+            <li>
+              <strong>Aerocode — Sistema de Gestão de Produção de Aeronaves</strong> · TypeScript · Node.js<br>
+              <span class="exp-desc">MVP de sistema CLI que simula o processo de produção aeronáutica, do cadastro à entrega. Controle de aeronaves, peças, etapas, testes e funcionários, com autenticação e níveis de permissão. Aplicados POO, enumerações, modularização e persistência em JSON.</span>
+            </li>
+
+            <li>
+              <strong>JanoSys — Sistema Integrado de Gestão de Normas Aeronáuticas</strong> · React · Python · Flask · MySQL<br>
+              <span class="exp-desc">Projeto integrador em parceria com empresa do setor aeroespacial. Plataforma web para centralizar e organizar requisitos normativos com filtragem avançada e controle de acesso por níveis de permissão. Desenvolvido em equipe com metodologia ágil (Scrum · Jira).</span>
+            </li>
+
+            <li>
+              <strong>JanoSys — Visualização de Dados do Censo 2010/2022</strong> · Python · Flask · Pandas · Plotly<br>
+              <span class="exp-desc">Projeto integrador para apoio à tomada de decisão municipal. Solução de visualização de dados demográficos para subsidiar distribuição de recursos públicos. Atuação como Product Owner: comunicação com cliente, definição de backlog e gestão de entregas.</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- IDIOMAS -->
+        <div class="cv-section">
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Português – Nativo</li>
+            <li>Espanhol – Básico (intercâmbio no México)</li>
+            <li>Inglês – Básico</li>
+          </ul>
+        </div>
+
       </div>
+    </main>
+  </section>
 
-      <div style="text-align:center; flex:1;">
-        <h3>WGCosta</h3>
-        <p>Em constante aprendizado.</p>
-        <p>&copy; <span id="ano"></span> - Todos os direitos reservados.</p>
-      </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div style="position:absolute; left:20px; top:50%; transform: translateY(-50%); display:flex; gap:15px; align-items:center;">
+      <a href="https://github.com/Costa-Wagner" target="_blank" class="icon-circle">
+        <img src="static/imagem/logos/GitHub.png" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/costa-wagner/" target="_blank" class="icon-circle">
+        <img src="static/imagem/logos/Linkedin.jpg" alt="LinkedIn">
+      </a>
+      <a href="https://wa.me/5512981056787" target="_blank" class="icon-circle">
+        <img src="static/imagem/logos/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
 
-    <script src="js/script.js" defer></script>
+    <div style="text-align:center; flex:1;">
+      <h3>WGCosta</h3>
+      <p>Construindo. Aprendendo. Evoluindo.</p>
+      <p>&copy; <span id="ano"></span> - Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <!-- Botões fixos -->
-    <button id="btnImprimir" title="Imprimir CV"> 🖨️ </button>
+  <script src="js/script.js" defer></script>
 
-    <!-- Script do botão imprimir -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const btnImprimir = document.getElementById('btnImprimir');
+  <!-- Botões fixos -->
+  <button id="btnImprimir" title="Imprimir CV"> 🖨️ </button>
 
-        // Verifica se os elementos existem
-        if (!btnImprimir) {
-          console.error('Botões não encontrados no DOM!');
-          return;
-        }
-
-        // Imprimir CV
-        btnImprimir.addEventListener('click', function() {
-          window.print();
-        });
+  <!-- Script do botão imprimir -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btnImprimir = document.getElementById('btnImprimir');
+      if (!btnImprimir) return;
+      btnImprimir.addEventListener('click', function() {
+        window.print();
       });
-      </script>
+    });
+  </script>
 
-    <!-- MARCAR A PÁGINA ATUAL -->
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const currentPage = window.location.pathname.split("/").pop();
-          const navLinks = document.querySelectorAll(".navbar .nav-link");
-
-          navLinks.forEach(link => {
-            if (link.getAttribute("href") === currentPage) {
-              link.classList.add("active");
-            }
-          });
-        });
-      </script>
-  </body>
-  </html>
+  <!-- MARCAR A PÁGINA ATUAL -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPage = window.location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll(".navbar .nav-link");
+      navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

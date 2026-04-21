@@ -92,9 +92,9 @@ h2 {
 }
 
 /* ---------- Resumo Profissional ---------- */
-.resumo-profissional {
+.cv-section {
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 1.5em;
   text-align: justify;
 }
