@@ -22,35 +22,20 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <style>
-    @media print {
-      header, footer, #btnImprimir, nav { display: none !important; }
-      body { background: white !important; }
-      .content { padding: 0 !important; }
-      .container { max-width: 100% !important; padding: 0 10px !important; }
-      .cv-section { margin-bottom: 8px !important; }
-      h2 { font-size: 13px !important; margin-bottom: 4px !important; }
-      ul li, p, .exp-desc { font-size: 11px !important; line-height: 1.4 !important; }
-      .header h1 { font-size: 18px !important; }
-      .contact { font-size: 10px !important; }
-    }
-  </style>
 </head>
 
 <body>
-  <!-- HEADER -->
+
+  <!-- HEADER DO SITE -->
   <header class="hero">
     <div class="hero-left d-flex align-items-center">
       <h1>Wagner Costa</h1>
     </div>
-
     <nav class="navbar navbar-expand-md navbar-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
         aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Alternar navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
@@ -68,126 +53,193 @@
     <main>
       <div class="container">
 
-        <!-- CABEÇALHO DO CV -->
-        <div class="header">
-          <div class="header-text">
+        <!-- ── CABEÇALHO DO CV ── -->
+        <div class="cv-cabecalho">
+          <div class="cv-cabecalho-esq">
             <h1>Wagner Gonçalves Costa</h1>
-            <div class="contact">
-              (12) 98105-6787 |
-              <a href="mailto:wagnergcosta@hotmail.com">wagnergcosta@hotmail.com</a> |
-              <a href="https://github.com/Costa-Wagner" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
-              <a href="https://www.linkedin.com/in/costa-wagner/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-              <a href="https://portfolio-wagner-nu.vercel.app" target="_blank"><i class="fas fa-globe"></i> Portfólio</a>
+            <div class="cv-subtitulo">Desenvolvedor de Software em Formação &nbsp;|&nbsp; Engenharia de Produção &nbsp;|&nbsp; Gestão Pública</div>
+          </div>
+          <div class="cv-cabecalho-divisor"></div>
+          <div class="cv-cabecalho-dir">
+            <span><i class="fas fa-map-marker-alt"></i> São José dos Campos – SP</span>
+            <span><i class="fas fa-phone"></i> <a href="tel:+5512981056787">(12) 98105-6787</a></span>
+            <span><i class="fas fa-envelope"></i> <a href="mailto:wagnergcosta@hotmail.com">wagnergcosta@hotmail.com</a></span>
+            <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/costa-wagner/" target="_blank">linkedin.com/in/costa-wagner</a></span>
+            <span><i class="fab fa-github"></i> <a href="https://github.com/Costa-Wagner" target="_blank">github.com/Costa-Wagner</a></span>
+            <span><i class="fas fa-globe"></i> <a href="https://portfolio-wagner-nu.vercel.app" target="_blank">portfolio-wagner-nu.vercel.app</a></span>
+          </div>
+        </div>
+
+        <!-- ── RESUMO PROFISSIONAL ── -->
+        <div class="section">
+          <div class="section-title">Resumo Profissional</div>
+          <p class="resumo">Desenvolvedor em formação, com trajetória profissional em Engenharia de Produção, atuando na indústria e no setor público. Experiência em gestão de processos, controle de qualidade e administração pública. Atualmente cursa <strong>DSM · Desenvolvimento de Software Multiplataforma · FATEC/SJC</strong>, atuando em projetos práticos com HTML, CSS, TypeScript, Python, React, Flask e MySQL. Combina visão analítica de processos e regras de negócio com a construção de soluções tecnológicas eficientes.</p>
+        </div>
+
+        <!-- ── HABILIDADES TÉCNICAS ── -->
+        <div class="section">
+          <div class="section-title">Habilidades Técnicas</div>
+          <div class="skills-grid">
+            <span class="skill-label">Linguagens</span>
+            <span class="skill-value">HTML5 · CSS3 · TypeScript · JavaScript · Python</span>
+            <span class="skill-label">Frameworks</span>
+            <span class="skill-value">React · Flask · Node.js</span>
+            <span class="skill-label">Banco de Dados</span>
+            <span class="skill-value">MySQL · Modelagem Relacional · Consultas SQL</span>
+            <span class="skill-label">Ferramentas</span>
+            <span class="skill-value">GitHub · Docker · AWS · Figma · Jira</span>
+            <span class="skill-label">Metodologias</span>
+            <span class="skill-value">Scrum · Metodologias Ágeis</span>
+            <span class="skill-label">Produtividade</span>
+            <span class="skill-value">Pacote Office Avançado</span>
+          </div>
+        </div>
+
+        <!-- ── EXPERIÊNCIA PROFISSIONAL ── -->
+        <div class="section">
+          <div class="section-title">Experiência Profissional</div>
+
+          <div class="exp-block">
+            <div class="exp-header">
+              <span class="exp-company">Tribunal Regional Eleitoral de São Paulo</span>
+              <span class="exp-period">mar/2024 – atual</span>
+            </div>
+            <div class="exp-location">SJC – SP</div>
+            <div class="exp-role">Servidor Requisitado</div>
+            <p class="exp-desc">Atuação em processos eleitorais e administrativos com operação diária de múltiplos sistemas institucionais: SEI, e-Título, Elo 22, Infodip, Odin e PJe. Responsável por cadastro e regularização de títulos eleitorais, emissão de certidões, condução de processos administrativos de prestação de contas e análise de conformidade legal.</p>
+          </div>
+
+          <div class="exp-block">
+            <div class="exp-header">
+              <span class="exp-company">Prefeitura Municipal de São José dos Campos</span>
+              <span class="exp-period">jul/2017 – atual</span>
+            </div>
+            <div class="exp-location">SJC – SP</div>
+            <div class="exp-role">Assistente em Gestão Municipal</div>
+            <p class="exp-desc">Atuação em processos administrativos municipais com foco em tributação e cadastro imobiliário. Parcelamento de tributos, atualização de cadastro imobiliário, levantamento de débitos e emissão de Certidão Negativa de Débitos Municipais (CNDM), com operação de sistemas digitais de gestão tributária e atendimento ao cidadão.</p>
+          </div>
+
+          <div class="exp-block">
+            <div class="exp-header">
+              <span class="exp-company">Helifer – Bombas e Equipamentos para Dosagem de Produtos Químicos</span>
+              <span class="exp-period">out/2015 – jul/2017</span>
+            </div>
+            <div class="exp-location">São Paulo – SP</div>
+            <div class="exp-role">Engenheiro Gestor Empresarial</div>
+            <p class="exp-desc">Análise e otimização de processos industriais, planejamento e controle da produção, gestão de estoque e avaliação de custos. Implementação de sistemas e processos internos e elaboração de instruções de trabalho.</p>
+          </div>
+
+          <div class="exp-block">
+            <div class="exp-header">
+              <span class="exp-company">Experiências anteriores</span>
+              <span class="exp-period">2004 – 2013</span>
+            </div>
+            <div class="exp-role">Engenharia de Qualidade · PCP · Logística · Administração</div>
+            <p class="exp-desc">Global Acqua · Prokraft · UNITAU · Thesi Montagens — atuação em engenharia de qualidade, planejamento e controle da produção, logística, administração acadêmica e administração em empresas dos segmentos metalúrgico, de equipamentos e papeleiro.</p>
+          </div>
+
+        </div>
+
+        <!-- ── FORMAÇÃO + IDIOMAS ── -->
+        <div class="section cv-form-idiomas page-break-top">
+
+          <div class="cv-form-col">
+            <div class="section-title">Formação Acadêmica</div>
+            <div class="edu-block">
+              <div class="edu-inst">FATEC São José dos Campos</div>
+              <div class="edu-course">Tecnólogo em Desenvolvimento de Software Multiplataforma</div>
+              <div class="edu-period">2025 – 2028 (previsão)</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-inst">UNINTER – Centro Universitário Internacional</div>
+              <div class="edu-course">Tecnólogo em Gestão Pública</div>
+              <div class="edu-period">2018 – 2020</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-inst">UNITAU – Universidade de Taubaté</div>
+              <div class="edu-course">Bacharel em Engenharia de Produção Mecânica</div>
+              <div class="edu-period">2008 – 2011</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-inst">UANL – Universidad Autónoma de Nuevo León</div>
+              <div class="edu-course">Intercâmbio Internacional — Monterrey, México</div>
+              <div class="edu-period">2º sem. 2007</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-inst">Centro Universitário FEI – São Bernardo do Campo</div>
+              <div class="edu-course">Bacharel em Engenharia de Produção — 2 anos cursados (trancado)</div>
+              <div class="edu-period">2005 – 2007</div>
             </div>
           </div>
-          <div class="header-img">
-            <img src="static/imagem/imagens/Wagner.2.jpg" alt="Wagner Gonçalves Costa">
+
+          <div class="cv-idiomas-col">
+            <div class="section-title">Idiomas</div>
+              <div class="idioma-block">
+                <span class="idioma-lingua">Português</span>
+                <span class="idioma-nivel">Nativo</span>
+              </div>
+              <div class="idioma-block">
+                <span class="idioma-lingua">Inglês</span>
+                <span class="idioma-nivel">Básico</span>
+              </div>
+              <div class="idioma-block">
+                <span class="idioma-lingua">Espanhol</span>
+                <span class="idioma-nivel">Básico</span>
+              </div>
           </div>
         </div>
 
-        <!-- RESUMO PROFISSIONAL -->
-        <div class="cv-section">
-          <h2>Resumo Profissional</h2>
-          <p>
-            Engenheiro de Produção com experiência na indústria e no setor público, atualmente em transição para a área de desenvolvimento de software. Ao longo da carreira, desenvolvi experiência em análise e otimização de processos, controle de qualidade e gestão administrativa — competências que complementam a formação técnica em desenvolvimento e agregam perspectiva prática à construção de soluções de software. Atualmente curso DSM - Desenvolvimento de Software Multiplataforma na FATEC, com projetos práticos desenvolvidos em HTML, CSS, Python, TypeScript, JavaScript, React e MySQL.
-          </p>
+        <!-- ── PROJETOS ── -->
+        <div class="section">
+          <div class="section-title">Projetos</div>
+
+          <div class="proj-block">
+            <div class="proj-header">
+              <span class="proj-title">Aerocode — Sistema de Gestão de Produção de Aeronaves</span>
+              <span class="proj-period">1º sem. 2026</span>
+            </div>
+            <span class="proj-stack">TypeScript · Node.js</span>
+            <p class="proj-desc">Projeto acadêmico de um MVP (protótipo funcional) em sistema de linha de comando (CLI) que simula o processo de produção aeronáutica, do cadastro à entrega. Controle de aeronaves, peças, etapas, testes e funcionários, com autenticação e níveis de permissão. Aplicados POO, enumerações, modularização e persistência em JSON.</p>
+          </div>
+
+          <div class="proj-block">
+            <div class="proj-header">
+              <span class="proj-title">JanoSys — Sistema Integrado de Gestão de Normas Aeronáuticas</span>
+              <span class="proj-period">1º sem. 2026</span>
+            </div>
+            <span class="proj-stack">React · Python · Flask · MySQL</span>
+            <p class="proj-desc">Projeto integrador acadêmico em parceria com empresa do setor aeroespacial da região. Plataforma web para centralizar e organizar requisitos normativos com filtragem avançada e controle de acesso por níveis de permissão. Desenvolvido em equipe com metodologia ágil (Scrum · Jira).</p>
+            <p class="proj-desc proj-desc-role"><strong>Atuação como DevTeam · FrontEnd:</strong> estruturação do layout base da aplicação, desenvolvimento da navegação lateral com controle de acesso e implementação de painel de requisições com fluxo de aprovação.</p>
+          </div>
+
+          <div class="proj-block">
+            <div class="proj-header">
+              <span class="proj-title">JanoSys — Visualização de Dados do Censo 2010/2022</span>
+              <span class="proj-period">2º sem. 2025</span>
+            </div>
+            <span class="proj-stack">Python · Flask · Pandas · Plotly</span>
+            <p class="proj-desc">Projeto integrador acadêmico para desenvolvimento de solução digital facilitando a visualização e análise dos dados demográficos da cidade, fornecendo subsídios para distribuição de recursos públicos.</p>
+            <p class="proj-desc proj-desc-role"><strong>Atuação como Product Owner:</strong> comunicação com cliente, definição de backlog e gestão de entregas.</p>
+          </div>
+
+          <div class="proj-block">
+            <div class="proj-header">
+              <span class="proj-title">Portfólio Pessoal</span>
+              <span class="proj-period">2º sem. 2025</span>
+            </div>
+            <span class="proj-stack">HTML · CSS · JavaScript</span>
+            <p class="proj-desc">Projeto acadêmico para desenvolvimento de portfólio pessoal para aprendizagem de HTML e CSS, aplicando boas práticas do desenvolvimento web.</p>
+          </div>
+
         </div>
 
-        <!-- HABILIDADES TÉCNICAS -->
-        <div class="cv-section">
-          <h2>Habilidades Técnicas</h2>
-          <ul>
-            <li><strong>Linguagens:</strong> HTML5 · CSS3 · Python · TypeScript · JavaScript</li>
-            <li><strong>Frameworks e Bibliotecas:</strong> React · Flask · Node.js</li>
-            <li><strong>Banco de Dados:</strong> MySQL · Modelagem Relacional</li>
-            <li><strong>Ferramentas:</strong> GitHub · Docker · Figma · Jira</li>
-            <li><strong>Metodologias:</strong> Scrum · Metodologias Ágeis</li>
-            <li><strong>Pacote Office:</strong> Avançado</li>
-          </ul>
-        </div>
-
-        <!-- FORMAÇÃO ACADÊMICA -->
-        <div class="cv-section">
-          <h2>Formação Acadêmica</h2>
-          <ul>
-            <li><strong>FATEC</strong> – Tecnólogo em Desenvolvimento de Software Multiplataforma (2025 – 2028 previsão)</li>
-            <li><strong>UNINTER</strong> – Bacharel em Gestão Pública (2018 – 2020)</li>
-            <li><strong>UNITAU</strong> – Bacharel em Engenharia de Produção Mecânica (2008 – 2011)</li>
-          </ul>
-        </div>
-
-        <!-- CURSOS COMPLEMENTARES -->
-        <div class="cv-section">
-          <h2>Cursos Complementares</h2>
-          <ul>
-            <li>Escola de Inovadores – Fatec São José dos Campos (40h)</li>
+        <!-- ── CURSOS COMPLEMENTARES ── -->
+        <div class="section">
+          <div class="section-title">Cursos Complementares</div>
+          <ul class="curso-list">
+            <li>Escola de Inovadores – FATEC São José dos Campos (40h)</li>
             <li>Python Básico – Fundação Bradesco (18h)</li>
-            <li>Empreendedorismo – UNITAU/SEBRAE (320h)</li>
-          </ul>
-        </div>
-
-        <!-- EXPERIÊNCIA PROFISSIONAL -->
-        <div class="cv-section">
-          <h2>Experiência Profissional</h2>
-          <ul>
-
-            <li>
-              <strong>Tribunal Regional Eleitoral de São Paulo – SJC/SP (mar/2024 – Atual)</strong><br>
-              <em>Servidor Requisitado</em><br>
-              <span class="exp-desc">Atuação em processos eleitorais e administrativos com operação diária de múltiplos sistemas institucionais: SEI, e-Título, Elo 22, Infodip, Odin e PJe. Responsável por cadastro e regularização de títulos eleitorais, emissão de certidões, condução de processos administrativos de prestação de contas e análise de conformidade legal.</span>
-            </li>
-
-            <li>
-              <strong>Prefeitura Municipal de São José dos Campos – SJC/SP (jul/2017 – Atual)</strong><br>
-              <em>Assistente em Gestão Municipal</em><br>
-              <span class="exp-desc">Atuação em processos administrativos municipais com foco em tributação e cadastro imobiliário. Parcelamento de tributos, atualização de cadastro imobiliário, levantamento de débitos e emissão de Certidão Negativa de Débitos Municipais (CNDM), com operação de sistemas digitais municipais de gestão tributária e atendimento ao cidadão.</span>
-            </li>
-
-            <li>
-              <strong>Helifer – São Paulo/SP (out/2015 – jul/2017)</strong><br>
-              <em>Engenheiro Gestor Empresarial</em><br>
-              <span class="exp-desc">Análise e otimização de processos industriais, planejamento e controle da produção, gestão de estoque e avaliação de custos. Implementação de sistemas e processos internos e elaboração de instruções de trabalho.</span>
-            </li>
-
-            <li>
-              <strong>Experiências anteriores (2004 – 2013)</strong><br>
-              <em>Global Acqua · Prokraft · UNITAU · Thesi Montagens</em><br>
-              <span class="exp-desc">Atuação em engenharia de qualidade, planejamento e controle da produção, logística e administração em empresas dos segmentos metalúrgico, papeleiro e químico.</span>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- PROJETOS -->
-        <div class="cv-section">
-          <h2>Projetos</h2>
-          <ul>
-
-            <li>
-              <strong>Aerocode — Sistema de Gestão de Produção de Aeronaves</strong> · TypeScript · Node.js<br>
-              <span class="exp-desc">MVP de sistema CLI que simula o processo de produção aeronáutica, do cadastro à entrega. Controle de aeronaves, peças, etapas, testes e funcionários, com autenticação e níveis de permissão. Aplicados POO, enumerações, modularização e persistência em JSON.</span>
-            </li>
-
-            <li>
-              <strong>JanoSys — Sistema Integrado de Gestão de Normas Aeronáuticas</strong> · React · Python · Flask · MySQL<br>
-              <span class="exp-desc">Projeto integrador em parceria com empresa do setor aeroespacial. Plataforma web para centralizar e organizar requisitos normativos com filtragem avançada e controle de acesso por níveis de permissão. Desenvolvido em equipe com metodologia ágil (Scrum · Jira).</span>
-            </li>
-
-            <li>
-              <strong>JanoSys — Visualização de Dados do Censo 2010/2022</strong> · Python · Flask · Pandas · Plotly<br>
-              <span class="exp-desc">Projeto integrador para apoio à tomada de decisão municipal. Solução de visualização de dados demográficos para subsidiar distribuição de recursos públicos. Atuação como Product Owner: comunicação com cliente, definição de backlog e gestão de entregas.</span>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- IDIOMAS -->
-        <div class="cv-section">
-          <h2>Idiomas</h2>
-          <ul>
-            <li>Português – Nativo</li>
-            <li>Espanhol – Básico (intercâmbio no México)</li>
-            <li>Inglês – Básico</li>
+            <li>Empreendedorismo – UNITAU / SEBRAE (320h)</li>
           </ul>
         </div>
 
@@ -197,7 +249,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div style="position:absolute; left:20px; top:50%; transform: translateY(-50%); display:flex; gap:15px; align-items:center;">
+    <div style="position:absolute; left:20px; top:50%; transform:translateY(-50%); display:flex; gap:15px; align-items:center;">
       <a href="https://github.com/Costa-Wagner" target="_blank" class="icon-circle">
         <img src="static/imagem/logos/GitHub.png" alt="GitHub">
       </a>
@@ -208,7 +260,6 @@
         <img src="static/imagem/logos/whatsapp.png" alt="WhatsApp">
       </a>
     </div>
-
     <div style="text-align:center; flex:1;">
       <h3>WGCosta</h3>
       <p>Construindo. Aprendendo. Evoluindo.</p>
@@ -218,31 +269,18 @@
 
   <script src="js/script.js" defer></script>
 
-  <!-- Botões fixos -->
-  <button id="btnImprimir" title="Imprimir CV"> 🖨️ </button>
-
-  <!-- Script do botão imprimir -->
+  <button id="btnImprimir" title="Imprimir CV">🖨️</button>
+  
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const btnImprimir = document.getElementById('btnImprimir');
-      if (!btnImprimir) return;
-      btnImprimir.addEventListener('click', function() {
-        window.print();
+      const btn = document.getElementById('btnImprimir');
+      if (btn) btn.addEventListener('click', function() { window.print(); });
+      const current = window.location.pathname.split("/").pop();
+      document.querySelectorAll(".navbar .nav-link").forEach(link => {
+        if (link.getAttribute("href") === current) link.classList.add("active");
       });
     });
   </script>
 
-  <!-- MARCAR A PÁGINA ATUAL -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const currentPage = window.location.pathname.split("/").pop();
-      const navLinks = document.querySelectorAll(".navbar .nav-link");
-      navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
 </body>
 </html>

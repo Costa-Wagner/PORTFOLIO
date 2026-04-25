@@ -1,5 +1,7 @@
-/* Contato */
-.contact-container {
+/* ══════════════════════════════════════
+   contato.css — Wagner Gonçalves Costa
+   ══════════════════════════════════════
+   */.contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
