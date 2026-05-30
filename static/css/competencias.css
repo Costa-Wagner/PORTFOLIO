@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════
-   certificados.css — Wagner Gonçalves Costa
+   competencia.css — Wagner Gonçalves Costa
    ══════════════════════════════════════ */
 .contact-box {
   display: flex;
@@ -24,7 +24,7 @@
 }
 
 section.content {
-  background-color: #f9f9f9;
+  background-color: #e6e3e3;
   flex: 1;
 }
 
@@ -88,6 +88,143 @@ section.content {
   background-color: #064db5;
   transform: translateY(-2px);
 }
+
+/* ======================== FERRAMENTAS EM ANÁLISE (ABAIXO) ========================
+/* SubTítulos */
+.ferramentas-titulo {
+  color: #086aeb;
+  font-weight: bold;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.contact-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+/* ========== Seção de Ferramentas ========== */
+
+.ferramentas-section {
+  background: #99bdec4f;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden; /* ✅ necessário para esconder o loop */
+  position: relative;
+}
+
+/* ======= Trilha de rolagem ======= */
+.ferramentas-track {
+  display: flex;
+  width: calc(200%); /* duplicação para rolagem contínua */
+  animation: scroll 40s linear infinite;
+}
+
+/* pausa a rolagem ao passar o mouse */
+.ferramentas-section:hover .ferramentas-track {
+  animation-play-state: paused;
+}
+
+.ferramentas-track.active {
+  cursor: grabbing;
+}
+
+/* Grid horizontal dos boxes (duplicado dentro da track) */
+.ferramentas-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Box circular */
+.ferramenta-box {
+  flex: 0 0 auto;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #dad5d5;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ferramenta-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.ferramenta-box img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.ferramenta-box p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 9px;
+  text-align: center;
+}
+
+/* ======= NOVO: animação de esteira ======= */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ========== Responsividade ========== */
+@media (max-width: 992px) {
+  .contact-box {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .ferramentas-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ferramenta-box {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+/* ======================== FERRAMENTAS EM ANÁLISE (ACIMA) ========================
+
+
 
 /* ========== Carrossel ========== */
 /* Container do carrossel */
@@ -200,10 +337,6 @@ section.content {
 @media (max-width: 576px) {
   .projeto-img {
     height: 160px;
-  }
-
-  .contact-box p {
-    font-size: 12px;
   }
 }
 

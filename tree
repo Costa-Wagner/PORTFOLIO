@@ -1,0 +1,28 @@
+Portfólio/
+├─ .vscode/
+│  └─ settings.json
+├─ js/
+│  └─ script.js
+├─ static/
+│  ├─ css/
+│  │  ├─ base.css
+│  │  ├─ competencia.css
+│  │  ├─ contato.css
+│  │  ├─ cv.css
+│  │  ├─ evento.css
+│  │  ├─ footer.css
+│  │  ├─ header.css
+│  │  ├─ projetos.css
+│  │  └─ sobre.css
+├─ .gitignore
+├─ competencia.html
+├─ contato.html
+├─ cv.html
+├─ eventos.html
+├─ footer.html
+├─ header.html
+├─ index.html
+├─ Mapa__Projeto.md
+├─ projetos.html
+├─ README.md
+└─ tree

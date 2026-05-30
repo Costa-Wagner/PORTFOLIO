@@ -39,7 +39,8 @@
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
             <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link" href="certificados.html">Certificados</a></li>
+            <li class="nav-item"><a class="nav-link" href="competencias.html">Competências</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
             <li class="nav-item"><a class="nav-link" href="cv.html">C.V.</a></li>
             <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
           </ul>
@@ -50,28 +51,26 @@
     <!-- CONTEÚDO -->
     <section class="content">
       <header>
-        <h2>Projetos & Ferramentas</h2>
+        <h2>Projetos</h2>
       </header>
 
-      <div class="container">
-        <!-- PROJETOS -->
-        <h4 class="ferramentas-titulo">Projetos em Desenvolvimento</h4>
+      <div class="container-fluid px-4">
         <div class="projetos-grid">
 
           <div class="projeto-card" onclick="abrirModal('api2')">
             <img src="static/imagem/imagens/proj_2_api.jpg" class="projeto-card-thumb" alt="Projeto API">
             <div class="projeto-card-body">
-              <h3>Projeto API</h3>
-              <p>V.</p>
+              <h3>Aprendizagem por Projeto Integrador</h3>
+              <p>Plataforma web para gestão normativa com filtros avançados e controle de acesso multinível.</p>
               <span class="projeto-badge">2º sem · DSM</span>
-              <span class="projeto-badge">DevTeam</span>
+              <span class="projeto-badge">DevTeam · FrontEnd</span>
             </div>
           </div>
 
           <div class="projeto-card" onclick="abrirModal('cli')">
             <img src="static/imagem/imagens/proj_1_cli.jpg" class="projeto-card-thumb" alt="Projeto CLI">
             <div class="projeto-card-body">
-              <h3>Projeto CLI</h3>
+              <h3>Projeto Acadêmico · CLI</h3>
               <p>Sistema em Linha de Comando simulando um processo de produção.</p>
               <span class="projeto-badge">2º sem · DSM</span>
             </div>
@@ -80,8 +79,8 @@
           <div class="projeto-card" onclick="abrirModal('api1')">
             <img src="static/imagem/imagens/proj_1_api.jpg" class="projeto-card-thumb" alt="Projeto API">
             <div class="projeto-card-body">
-              <h3>Projeto API</h3>
-              <p>Visualização dos dados do CENSO 2010/2022 · FATEC.</p>
+              <h3>Aprendizagem por Projeto Integrador</h3>
+              <p>Dashboard para visualização dos dados do CENSO 2010/2022.</p>
               <span class="projeto-badge">1º sem · DSM</span>
               <span class="projeto-badge">Product Owner</span>
             </div>
@@ -90,7 +89,7 @@
           <div class="projeto-card" onclick="abrirModal('pessoal')">
             <img src="static/imagem/imagens/proj_2_site.jpg" class="projeto-card-thumb" alt="Site Particular">
             <div class="projeto-card-body">
-              <h3>Site Particular</h3>
+              <h3>Projeto Acadêmico · Site Particular</h3>
               <p>Desenvolvimento web pessoal com foco em UX e design digital.</p>
               <span class="projeto-badge">1º sem · DSM</span>
             </div>
@@ -106,52 +105,9 @@
             <h2 id="modalTitulo"></h2>
             <h4 id="modalSubtitulo" class="modal-subtitulo"></h4>
             <p id="modalDesc"></p>
+            <p id="modalSubdesc"></p>
             <div class="modal-tags" id="modalTags"></div>
             <a id="modalLink" href="#" target="_blank" class="modal-btn">Ver projeto ↗</a>
-          </div>
-        </div>
-
-        <!-- FERRAMENTAS -->
-        <h4 class="ferramentas-titulo mt-5">Ferramentas em Aprendizagem</h4>
-
-        <div class="ferramentas-section">
-          <div class="ferramentas-track">
-            <div class="ferramentas-grid">
-              <div class="ferramenta-box"><img src="static/imagem/logos/Html.png" alt="HTML5"><p>HTML5</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/CSS.png" alt="CSS"><p>CSS</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/JavaScript.png" alt="JavaScript"><p>JavaScript</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Flask.png" alt="Flask"><p>Flask</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Vercel.png" alt="Vercel"><p>Vercel</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/aws.png" alt="AWS"><p>AWS</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/docker.png" alt="Docker"><p>Docker</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Figma.png" alt="Figma"><p>Figma</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/python-logo.png" alt="Python"><p>Python</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Pandas.png" alt="Pandas"><p>Pandas</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Plotly.png" alt="Plotly"><p>Plotly</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/GitHub.png" alt="GitHub"><p>GitHub</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Git_bash.png" alt="Git Bash"><p>Git Bash</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Jira.png" alt="Jira"><p>Jira</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/MySQL.png" alt="MySQL"><p>MySQL</p></div>
-            </div>
-
-            <!-- Duplicação para rolagem contínua -->
-            <div class="ferramentas-grid">
-              <div class="ferramenta-box"><img src="static/imagem/logos/Html.png" alt="HTML5"><p>HTML5</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/CSS.png" alt="CSS"><p>CSS</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/JavaScript.png" alt="JavaScript"><p>JavaScript</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Flask.png" alt="Flask"><p>Flask</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Vercel.png" alt="Vercel"><p>Vercel</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/aws.png" alt="AWS"><p>AWS</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/docker.png" alt="Docker"><p>Docker</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Figma.png" alt="Figma"><p>Figma</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/python-logo.png" alt="Python"><p>Python</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Pandas.png" alt="Pandas"><p>Pandas</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Plotly.png" alt="Plotly"><p>Plotly</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/GitHub.png" alt="GitHub"><p>GitHub</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Git_bash.png" alt="Git Bash"><p>Git Bash</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/Jira.png" alt="Jira"><p>Jira</p></div>
-              <div class="ferramenta-box"><img src="static/imagem/logos/MySQL.png" alt="MySQL"><p>MySQL</p></div>
-            </div>
           </div>
         </div>
 
@@ -276,15 +232,16 @@
         const projetos = {
           api2: {
             img: 'static/imagem/imagens/proj_2_api.jpg',
-            titulo: 'Projeto API',
+            titulo: 'Sistema para Gestão de Normas Aeronáuticas',
             subtitulo: 'API · Aprendizado por Projeto Integrador | 2º sem · FATEC',
-            desc: 'Projeto desenvolvido em parceria com uma empresa do setor aeroespacial e de defesa da região, o sistema resolve um problema real: a dificuldade de localizar e gerenciar a grande quantidade de normas técnicas utilizadas por engenheiros na elaboração de projetos aeronáuticos. A plataforma web permite centralizar e organizar requisitos normativos com filtragem avançada por código, categoria, órgão e palavra-chave, controle de acesso por níveis de permissão e com histórico de alterações. O projeto segue metodologia ágil com sprints, backlog priorizado, DoR e DoD definidos, e versionamento estruturado por branches. Atuei como Dev Team com foco em front-end, contribuindo no desenvolvimento de componentes React e interfaces responsivas.',
+            desc: 'Projeto acadêmico desenvolvido em parceria com uma empresa do setor aeroespacial e de defesa da região. O sistema resolve um problema real: a dificuldade de localizar e gerenciar a grande quantidade de normas técnicas utilizadas por engenheiros na elaboração de projetos aeronáuticos. A plataforma web permite centralizar e organizar requisitos normativos com filtragem avançada por código, categoria, órgão e palavra-chave, controle de acesso por níveis de permissão e com histórico de alterações. O projeto segue metodologia ágil com sprints, backlog priorizado, DoR e DoD definidos, e versionamento estruturado por branches.',
+            subdesc: 'Atuação como DevTeam · FrontEnd: contribuindo no desenvolvimento de componentes React e interfaces responsivas, desenvolvimento de Layout Base (Template), navegação lateral com ACL (Access Control List) e painel operacional com lógica de estados de aprovação',
             tags: ['DevTeam · FrontEnd', 'HTML', 'CSS', 'React', 'JavaScript', 'Node.js', 'Python', 'Flask', 'MySQL', 'Docker', 'AWS', 'Figma', 'Jira', 'GitHub'],
             link: 'https://janosys-aeroespacial.vercel.app'
           },
           cli: {
             img: 'static/imagem/imagens/proj_1_cli.jpg',
-            titulo: 'Projeto CLI',
+            titulo: 'Sistema de Gestão de Produção de Aeronaves',
             subtitulo: 'CLI · Interface de Linha de Comando | 2º sem · FATEC',
             desc: 'O Aerocode é um sistema desenvolvido em TypeScript como avaliação acadêmica individual. Inspirado no ambiente operacional de empresas aeronáuticas como a Embraer, o sistema simula o processo completo de produção de aeronaves, do cadastro inicial à entrega final ao cliente, contemplando gerenciamento de aeronaves, peças, etapas de produção, testes e funcionários, além de geração de relatórios por aeronave. A arquitetura foi organizada em camadas — models, services e cli — com persistência automática de dados em arquivos JSON e controle de acesso por três níveis de permissão: Operador, Engenheiro e Administrador.',
             tags: ['TypeScript', 'Programação Orientada a Objetos', 'Encapsulamento', 'Modularização', 'Autenticação e controle de acesso', 'Diagrama UML'],
@@ -292,9 +249,10 @@
           },
           api1: {
             img: 'static/imagem/imagens/proj_1_api.jpg',
-            titulo: 'Projeto API — JanoSys',
+            titulo: 'Sistema para visualização de Dados do Censo 2010/2022',
             subtitulo: 'API · Aprendizado por Projeto Integrador | 1º sem · FATEC',
-            desc: 'Projeto acadêmico com o objetivo de desenvolver uma solução digital para facilitar a visualização e análise dos dados do Censo 2010/2022, fornecendo ao município subsídios para decisões de alocação de recursos municipais. Atuei como Product Owner da equipe, sendo responsável pela interface com o cliente, levantamento e priorização de requisitos, gestão do backlog e acompanhamento das entregas via Jira.',
+            desc: 'Projeto acadêmico com o objetivo de desenvolver uma solução digital para facilitar a visualização e análise dos dados do Censo 2010/2022, fornecendo ao município subsídios para decisões de alocação de recursos municipais.',
+            subdesc: 'Atuação como Product Owner: responsável pela interface com o cliente, levantamento e priorização de requisitos, gestão do backlog e acompanhamento das entregas via Jira.',
             tags: ['Product Owner', 'HTML', 'CSS', 'Python', 'Flask', 'Pandas', 'Plotly', 'Vercel', 'Docker', 'AWS', 'Figma', 'Jira', 'GitHub', 'GoogleColab'
             ],
             link: 'https://janosysapi1.vercel.app/'
@@ -315,6 +273,7 @@
           document.getElementById('modalTitulo').textContent = p.titulo;
           document.getElementById('modalSubtitulo').textContent = p.subtitulo || '';
           document.getElementById('modalDesc').textContent = p.desc;
+          document.getElementById('modalSubdesc').textContent = p.subdesc;
           document.getElementById('modalLink').href = p.link;
           document.getElementById('modalTags').innerHTML = p.tags.map(t => `<span class="modal-tag">${t}</span>`).join('');
           document.getElementById('modalOverlay').classList.add('open');

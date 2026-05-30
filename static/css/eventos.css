@@ -1,0 +1,229 @@
+/* ══════════════════════════════════════
+   eventos.css — Wagner Gonçalves Costa
+   ══════════════════════════════════════
+*/
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+section.content {
+  background-color: #e6e3e3;
+  flex: 1;
+}
+
+.contact-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.projeto-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-box h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #086aeb;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.contact-box h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.contact-box h5 {
+  font-size: 12px;
+  font-weight: 400; 
+  color: #686868;
+  margin-bottom: 8px;
+}
+
+.contact-box p {
+  font-size: 13px;
+  color: #555;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.btn-certificado {
+  margin-top: auto;
+  background-color: #086aeb;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-certificado:hover {
+  background-color: #064db5;
+  transform: translateY(-2px);
+}
+
+/* ========== Carrossel ========== */
+/* Container do carrossel */
+.eventos-carousel-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Wrapper para overflow */
+.eventos-carousel-wrapper {
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+/* Row com transição */
+.eventos-carousel-wrapper .row {
+  transition: transform 0.5s ease-in-out;
+  flex-wrap: nowrap;
+}
+
+/* Botões de navegação - FIXOS */
+.carousel-nav-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #007bff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.carousel-nav-btn:hover:not(:disabled) {
+  background: #007bff;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.carousel-nav-btn.prev {
+  left: -60px;
+}
+
+.carousel-nav-btn.next {
+  right: -60px;
+}
+
+/* ========== Lightbox ========== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.fechar:hover {
+  transform: scale(1.2);
+  color: #ccc;
+}
+
+/* ========== Responsividade ========== */
+@media (max-width: 768px) {
+  .projeto-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projeto-img {
+    height: 160px;
+  }
+
+  .contact-box p {
+    font-size: 12px;
+  }
+}
+
+/* ========== Responsividade - Carrossel ========== */
+
+@media (max-width: 1400px) {
+  .carousel-nav-btn.prev {
+    left: -25px;
+  }
+  
+  .carousel-nav-btn.next {
+    right: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  
+  .carousel-nav-btn.prev {
+    left: 0;
+  }
+  
+  .carousel-nav-btn.next {
+    right: 0;
+  }
+}
