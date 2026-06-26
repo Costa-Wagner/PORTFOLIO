@@ -14,7 +14,10 @@
     . card certificados pode diminuir na altura
     . ferramentas não aparece
 
-
+    PROJETOS
+    . navbar / dropbox
+    . barra de rolagem
+    
 
 > Atualizar imagens dos projetos
 
@@ -22,3 +25,5 @@
     .ao selecionar o card-1 da segunda linha (2º sem), este ocupa o campo do primeiro card-1 (1º sem) ao se recolher à esquerda, dando a impressão que seria este aberto e as informações do card-2 retratariam este projeto
 
     .retirar tecnologias do cabeçalho do card-2 por já constar no corpo do mesmo
+
+    . 
